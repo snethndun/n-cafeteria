@@ -1,16 +1,7 @@
 # n_cafe
 
-A new Flutter project.
+A cool app to check your meal
 
-## Getting Started
+# Login page
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![qemu-system-i386_9uboZE0RkA](https://github.com/snethndun/n-cafeteria/assets/72740598/b3a5326b-fe74-4dfb-971c-4993998a36d2)

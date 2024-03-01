@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:n_cafe/Login_Screen.dart';
 
-
 void main() {
-  runApp(const loginScreen(
-     home: SafeArea(child: loginScreen()),
-  ));
+  runApp(
+    MaterialApp(
+      theme: ThemeData(useMaterial3: true),
+      home: loginScreen(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,16 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home:Scaffold(
-          body: Center(child:Image.asset('assets/images/Rectangle167.png')),
-
-
-
-
-        )
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Center(
+          child: Image.asset('assets/images/Rectangle167.png'),
+        ),
+      ),
     );
-
-
   }
 }

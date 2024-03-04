@@ -4,10 +4,10 @@ TextStyle PrimaryHeadingTextStyle() {
   return TextStyle(fontFamily: 'Poppins-bold', fontSize: 25.0);
 }
 
-TextStyle SecondaryTextGrayStyle() {
+TextStyle SecondaryTextGrayStyle({double? fontSize}) {
   return TextStyle(
     fontFamily: 'Poppins',
-    fontSize: 15.0,
+    fontSize: 15.0 ?? fontSize,
     fontWeight: FontWeight.w500,
     color: Color(0xFF868889),
   );
@@ -26,10 +26,10 @@ TextStyle SecondaryTextHiperLinkStyle() {
       color: Color(0xFF407EC7));
 }
 
-TextStyle SecondaryTextBlackStyle() {
+TextStyle SecondaryTextBlackStyle({double? fontSize}) {
   return TextStyle(
       color: Colors.black,
       fontFamily: 'Poppins',
-      fontSize: 15.0,
+      fontSize: fontSize ?? 15.0,
       fontWeight: FontWeight.w500);
 }

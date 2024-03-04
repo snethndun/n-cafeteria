@@ -28,7 +28,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         centerTitle: true,
         title: Text(
           "Welcome",
-          style: SecondaryTextWhiteStyle(),
+          style: SecondaryTextWhiteStyle(fontSize: 20.0),
         ),
         elevation: 0,
         backgroundColor: appBarColor,

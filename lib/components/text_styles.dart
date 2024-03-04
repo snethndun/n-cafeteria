@@ -33,3 +33,11 @@ TextStyle SecondaryTextBlackStyle({double? fontSize}) {
       fontSize: fontSize ?? 15.0,
       fontWeight: FontWeight.w500);
 }
+
+TextStyle SecondaryTextWhiteStyle({double? fontSize}) {
+  return TextStyle(
+      color: Colors.white,
+      fontFamily: 'Poppins',
+      fontSize: fontSize ?? 15.0,
+      fontWeight: FontWeight.w500);
+}

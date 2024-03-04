@@ -1,30 +1,22 @@
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
-import 'package:n_cafe/Login_Screen.dart';
-=======
+
 import 'package:n_cafe/screens/Login_screen.dart';
 import 'package:n_cafe/screens/Sign_up_page.dart';
 import 'package:n_cafe/screens/Verify_Email_Screen.dart';
->>>>>>> Stashed changes
 
 void main() {
   runApp(
     MaterialApp(
-<<<<<<< Updated upstream
-      theme: ThemeData(useMaterial3: true),
-      home: loginScreen(),
-=======
       debugShowMaterialGrid: false,
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => SignUpScreen(),
-      //   '/login': (context) => loginScreen()
-      // },
-      home: Verify_Email(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SignUpScreen(),
+        '/login': (context) => loginScreen(),
+        '/verify': (context) => Verify_Email(),
+      },
       theme: ThemeData(
         useMaterial3: true,
       ),
->>>>>>> Stashed changes
     ),
   );
 }

@@ -121,7 +121,9 @@ class _loginScreenState extends State<loginScreen> {
                                 height: 10.0,
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/verify');
+                                },
                                 child: Text("Login"),
                                 style: PrimaryMaxButtonStyle(),
                               ),

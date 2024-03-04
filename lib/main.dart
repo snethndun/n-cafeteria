@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:n_cafe/Login_Screen.dart';
 
+import 'package:n_cafe/screens/Login_screen.dart';
+import 'package:n_cafe/screens/Sign_up_page.dart';
+import 'package:n_cafe/screens/Verify_Email_Screen.dart';
 
 void main() {
-  runApp(const loginScreen(
-     home: SafeArea(child: loginScreen()),
-  ));
+  runApp(
+    MaterialApp(
+      debugShowMaterialGrid: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SignUpScreen(),
+        '/login': (context) => loginScreen(),
+        '/verify': (context) => Verify_Email(),
+      },
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,16 +27,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home:Scaffold(
-          body: Center(child:Image.asset('assets/images/Rectangle167.png')),
-
-
-
-
-        )
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Center(
+          child: Image.asset('assets/images/Rectangle167.png'),
+        ),
+      ),
     );
-
-
   }
 }

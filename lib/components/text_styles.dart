@@ -41,3 +41,19 @@ TextStyle SecondaryTextWhiteStyle({double? fontSize}) {
       fontSize: fontSize ?? 15.0,
       fontWeight: FontWeight.w500);
 }
+
+TextStyle SecondaryTextPriceStyle({double? fontSize}) {
+  return TextStyle(
+      color: Color(0xFF54D17A),
+      fontFamily: 'Poppins-bold',
+      fontSize: fontSize ?? 15.0,
+      fontWeight: FontWeight.w500);
+}
+
+TextStyle SecondaryTextBlackStyleHeading({double? fontSize}) {
+  return TextStyle(
+      color: Color(0xFF000000),
+      fontFamily: 'Poppins-bold',
+      fontSize: fontSize ?? 20.0,
+      fontWeight: FontWeight.w600);
+}

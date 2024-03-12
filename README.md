@@ -13,3 +13,7 @@ A cool app to check your meal
 # Verify email page
 
 ![qemu-system-i386_jeFb7S8YvM](https://github.com/snethndun/n-cafeteria/assets/72740598/e609faa0-9a4d-469e-a5cb-b74b02999d13)
+
+# Main Product View Page
+
+![qemu-system-i386_1IbEmRMKjl](https://github.com/snethndun/n-cafeteria/assets/72740598/e6ee65e1-c3b3-4bff-810f-52781737510b)

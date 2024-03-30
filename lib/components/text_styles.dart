@@ -57,3 +57,11 @@ TextStyle SecondaryTextBlackStyleHeading({double? fontSize}) {
       fontSize: fontSize ?? 20.0,
       fontWeight: FontWeight.w600);
 }
+
+TextStyle SecondaryTextBlackStyleHeadingLight({double? fontSize}) {
+  return TextStyle(
+      color: Color(0xFF000000),
+      fontFamily: 'Poppins',
+      fontSize: fontSize ?? 20.0,
+      fontWeight: FontWeight.w600);
+}

@@ -21,3 +21,7 @@ A cool app to check your meal
 # Cafe Product View page
 
 ![qemu-system-x86_64_rY9ETbACvz](https://github.com/snethndun/n-cafeteria/assets/72740598/3037fb83-8e3d-4415-92a5-d1e390b66adb)
+
+# Cafe Login Page
+
+![Screenshot_1711786410](https://github.com/snethndun/n-cafeteria/assets/72740598/d34137bb-fcfd-4415-af50-413262adcc4c)

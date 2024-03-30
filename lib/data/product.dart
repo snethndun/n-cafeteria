@@ -43,6 +43,16 @@ class Product {
         productPrice: 120.0,
         productName: "Rice with kottu",
         cafeName: "So Cafe"),
+    Product(
+        productImage: AssetImage('assets/images/RiceAndCurry.png'),
+        productPrice: 120.0,
+        productName: "Rice with kottu",
+        cafeName: "So Cafe"),
+    Product(
+        productImage: AssetImage('assets/images/RiceAndCurry.png'),
+        productPrice: 120.0,
+        productName: "Rice with kottu",
+        cafeName: "So Cafe"),
   ];
 
   static List<Product> getProductList() => ProductList;

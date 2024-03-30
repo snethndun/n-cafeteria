@@ -1,38 +1,18 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:n_cafe/components/primary_max_button_style.dart';
 import 'package:n_cafe/components/text_styles.dart';
-import 'package:expandable_page_view/expandable_page_view.dart';
-
 import 'package:n_cafe/data/product.dart';
 
-class ProductMainScreen extends StatefulWidget {
-  const ProductMainScreen({super.key});
+class CafeScreen extends StatefulWidget {
+  const CafeScreen({super.key});
 
   @override
-  State<ProductMainScreen> createState() => _ProductMainScreenState();
+  State<CafeScreen> createState() => _CafeScreenState();
 }
 
-class _ProductMainScreenState extends State<ProductMainScreen> {
+class _CafeScreenState extends State<CafeScreen> {
   late PageController _controller;
-  final List<String> imgList = [
-    'assets/images/banner.png',
-    'assets/images/banner.png',
-    'assets/images/banner.png',
-    // add more image paths if needed
-  ];
-
-  final List<String> cafeList = ["1", "2", "3", "4", "5", "6"];
 
   final List<Product> productList = Product.getProductList();
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    _controller = PageController(initialPage: 0);
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -53,90 +33,55 @@ class _ProductMainScreenState extends State<ProductMainScreen> {
       ),
       appBar: AppBar(
         surfaceTintColor: Colors.transparent,
-        flexibleSpace: Container(
-          height: 20.0,
+        title: Text(
+          "So Cafe",
+          style: SecondaryTextBlackStyleHeading(),
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.favorite_border_outlined),
-          ),
-        ],
-        title: const TextField(
-          decoration: InputDecoration(
-            filled: true,
-            fillColor: Color(0xFFF4F5F9),
-            focusColor: Color(0xFFF4F5F9),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.transparent,
-              ),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: Colors.transparent,
-              ),
-            ),
-            hintText: 'What are you carving ?',
-            hintStyle: TextStyle(
-              color: Color(0xFF868889),
-            ),
-            prefixIcon: Icon(
-              Icons.search,
-              color: Color(0xFF868889),
-            ),
-          ),
-        ),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(25.0),
+          padding: const EdgeInsets.only(left: 25.0, right: 25.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ExpandablePageView.builder(
-                controller: _controller,
-                itemCount: imgList.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Image.asset(
-                    imgList[index],
-                    fit: BoxFit.cover,
-                  );
-                },
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Row(
+                      children: [
+                        // profile icon code
+
+                        buildUserAvatar(
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVv2FZ0oaDhgrfVfYVOoqj5coJvA0V7g_W1T3p9HreLA&s',
+                            true),
+                        SizedBox(
+                          width: 30.0,
+                        ),
+                        Text(
+                          "So Cafe",
+                          style: SecondaryTextBlackStyleHeadingLight(),
+                        ),
+                      ],
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.favorite_border_outlined),
+                    onPressed: () {},
+                  ),
+                ],
               ),
               SizedBox(
-                height: 10.0,
+                height: 20.0,
               ),
               Text(
-                "Cafes",
-                style: SecondaryTextBlackStyleHeading(),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              SizedBox(
-                height: 70.0,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  controller: _controller,
-                  itemCount: cafeList.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: CircleAvatar(
-                        radius: 25.0,
-                        backgroundColor: Colors.grey,
-                        child: Text(cafeList[index]),
-                      ),
-                    );
-                  },
-                ),
+                "Available Now",
+                style: SecondaryTextBlackStyleHeadingLight(),
               ),
               SizedBox(
                 height: 10.0,
               ),
-
-              // here goes the product list
               Flexible(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.vertical,
@@ -226,6 +171,30 @@ class _ProductMainScreenState extends State<ProductMainScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  Widget buildUserAvatar(String imageUrl, bool isOnline) {
+    return Stack(
+      children: [
+        CircleAvatar(
+          backgroundImage: NetworkImage(imageUrl),
+          radius: 25,
+        ),
+        Positioned(
+          top: 0,
+          right: 0,
+          child: AnimatedContainer(
+            duration: Duration(milliseconds: 300),
+            width: isOnline ? 15 : 0,
+            height: isOnline ? 15 : 0,
+            decoration: BoxDecoration(
+              color: Colors.green,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

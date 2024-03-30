@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:n_cafe/screens/Cafe_page.dart';
 
 import 'package:n_cafe/screens/Login_screen.dart';
 import 'package:n_cafe/screens/Product_Main_Screen.dart';
@@ -16,7 +17,7 @@ void main() {
       //   '/verify': (context) => Verify_Email(),
       // },
 
-      home: ProductMainScreen(),
+      home: CafeScreen(),
 
       theme: ThemeData(
         useMaterial3: true,

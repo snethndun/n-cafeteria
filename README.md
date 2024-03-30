@@ -29,3 +29,7 @@ A cool app to check your meal
 # Review Page
 
 ![qemu-system-x86_64_mKm1c9mJjq](https://github.com/snethndun/n-cafeteria/assets/72740598/ccb0c6f6-f801-4853-805a-7132302a63a4)
+
+# Write Review Page
+
+![qemu-system-x86_64_KXUq6KCgyz](https://github.com/snethndun/n-cafeteria/assets/72740598/812347ba-4dbe-4037-b881-3e87cbc4baf6)

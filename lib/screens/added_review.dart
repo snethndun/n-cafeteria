@@ -24,10 +24,7 @@ class _AddedReviewState extends State<AddedReview> {
           centerTitle: true,
           title: Text(
             'Reviews',
-            style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-                fontFamily: 'Poppins'),
+            style: SecondaryTextBlackStyleHeadingLight(),
           ),
           actions: [
             IconButton(
@@ -167,14 +164,38 @@ class _WriteReviewScreenState extends State<WriteReviewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Color(0xFFF4F5F9),
       appBar: AppBar(
-        title: Text('Write Review'),
+        title: Text(
+          'Write Review',
+          style: SecondaryTextBlackStyleHeadingLight(),
+        ),
+        centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(25.0),
         child: Column(
           children: [
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              "What do you think ?",
+              style: SecondaryTextBlackStyleHeading(),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text(
+              "Please give your rating by clicking on \n the stars below.",
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 for (int i = 0; i < 5; i++)
                   IconButton(
@@ -186,17 +207,37 @@ class _WriteReviewScreenState extends State<WriteReviewScreen> {
                   ),
               ],
             ),
-            TextField(
-              decoration:
-                  InputDecoration(hintText: 'Tell us about your experience'),
-              onChanged: (text) => _setComment(text),
-              maxLines: null,
+            Expanded(
+              child: SizedBox(
+                child: TextFormField(
+                  textAlignVertical: TextAlignVertical.top,
+                  expands: true,
+                  maxLines: null,
+                  minLines: null,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    focusColor: Colors.white,
+                    hintText: "Tell us about the food you experienced!",
+                    hintStyle: TextBoxHintTextGrayStyle(
+                        fontSize: 12.0, myFontWeight: FontWeight.w500),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                  // any number you need (It works as the rows for the textarea)
+                  keyboardType: TextInputType.multiline,
+                ),
+              ),
             ),
-            TextButton(
-              onPressed: () {
-                // Submit review logic here
-              },
-              child: const Text('Submit'),
+            SizedBox(
+              height: 10.0,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text("Submit"),
+              style: PrimaryMaxButtonStyle(),
             ),
           ],
         ),

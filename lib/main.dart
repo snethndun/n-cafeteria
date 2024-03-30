@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:n_cafe/screens/cafe_page.dart';
+import 'package:n_cafe/screens/cafe_sign_in.dart';
 
-import 'package:n_cafe/screens/Login_screen.dart';
-import 'package:n_cafe/screens/Product_Main_Screen.dart';
-import 'package:n_cafe/screens/Sign_up_page.dart';
-import 'package:n_cafe/screens/Verify_Email_Screen.dart';
+import 'package:n_cafe/screens/login_screen.dart';
+import 'package:n_cafe/screens/product_Main_Screen.dart';
+import 'package:n_cafe/screens/sign_up_page.dart';
+import 'package:n_cafe/screens/verify_Email_Screen.dart';
 
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
       // initialRoute: '/',
       // routes: {
@@ -16,7 +19,7 @@ void main() {
       //   '/verify': (context) => Verify_Email(),
       // },
 
-      home: ProductMainScreen(),
+      home: CafeSignIn(),
 
       theme: ThemeData(
         useMaterial3: true,

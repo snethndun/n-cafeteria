@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:n_cafe/screens/added_review.dart';
 import 'package:n_cafe/screens/cafe_page.dart';
 import 'package:n_cafe/screens/cafe_sign_in.dart';
 
@@ -19,7 +20,7 @@ void main() {
       //   '/verify': (context) => Verify_Email(),
       // },
 
-      home: CafeSignIn(),
+      home: AddedReview(),
 
       theme: ThemeData(
         useMaterial3: true,

@@ -14,9 +14,13 @@ TextStyle SecondaryTextGrayStyle(
       height: fontHeight ?? null);
 }
 
-TextStyle TextBoxHintTextGrayStyle() {
+TextStyle TextBoxHintTextGrayStyle(
+    {double? fontSize, FontWeight? myFontWeight}) {
   return TextStyle(
-      fontFamily: "Poppins", fontSize: 15.0, fontWeight: FontWeight.w400);
+    fontFamily: "Poppins",
+    fontSize: fontSize ?? 15.0,
+    fontWeight: myFontWeight ?? FontWeight.w400,
+  );
 }
 
 TextStyle SecondaryTextHiperLinkStyle() {

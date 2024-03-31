@@ -16,6 +16,10 @@ InputDecoration PrimaryTextComponent(
         borderRadius: BorderRadius.circular(6.0),
         borderSide: BorderSide(color: Colors.white),
       ),
+      disabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(6.0),
+        borderSide: BorderSide(color: Colors.white),
+      ),
       prefixIcon: MyPrefixIcon,
       suffixIcon: MySuffixIcon);
 }

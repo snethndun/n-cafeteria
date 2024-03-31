@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:n_cafe/components/bottom_naviagation.dart';
 import 'package:n_cafe/components/primary_max_button_style.dart';
 import 'package:n_cafe/components/text_styles.dart';
 import 'package:n_cafe/components/primary_text_component.dart';
@@ -19,6 +20,7 @@ class _AddedReviewState extends State<AddedReview> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        bottomNavigationBar: CustomizedBottomNavigation(),
         backgroundColor: Color(0xFFF4F5F9),
         appBar: AppBar(
           centerTitle: true,
@@ -164,6 +166,7 @@ class _WriteReviewScreenState extends State<WriteReviewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: CustomizedBottomNavigation(),
       resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xFFF4F5F9),
       appBar: AppBar(

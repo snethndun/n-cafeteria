@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:n_cafe/components/bottom_naviagation.dart';
 import 'package:n_cafe/components/text_styles.dart';
 import 'package:n_cafe/data/product.dart';
 
@@ -17,20 +18,7 @@ class _CafeScreenState extends State<CafeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        // backgroundColor: Color(),
-        elevation: 0.0,
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_outline), label: "Favourite"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline), label: "Profile"),
-        ],
-      ),
+      bottomNavigationBar: CustomizedBottomNavigation(),
       appBar: AppBar(
         surfaceTintColor: Colors.transparent,
         title: Text(

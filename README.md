@@ -41,3 +41,7 @@ A cool app to check your meal
 # Product Details Page
 
 ![qemu-system-x86_64_Scjo3d9Oxp](https://github.com/snethndun/n-cafeteria/assets/72740598/48d12a20-7e11-4eb6-9f0c-47c68a5711f6)
+
+# Search Screen Page
+
+![qemu-system-x86_64_u228l7OrGA](https://github.com/snethndun/n-cafeteria/assets/72740598/fa1296c0-c885-4972-be1c-de993f84835d)

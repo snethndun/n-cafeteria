@@ -7,6 +7,7 @@ import 'package:n_cafe/screens/food_details.dart';
 
 import 'package:n_cafe/screens/login_screen.dart';
 import 'package:n_cafe/screens/product_Main_Screen.dart';
+import 'package:n_cafe/screens/search_screen.dart';
 import 'package:n_cafe/screens/sign_up_page.dart';
 import 'package:n_cafe/screens/verify_Email_Screen.dart';
 
@@ -22,7 +23,7 @@ void main() {
       //   '/verify': (context) => Verify_Email(),
       // },
 
-      home: FoodDetails(),
+      home: SearchScreen(),
 
       theme: ThemeData(
         useMaterial3: true,

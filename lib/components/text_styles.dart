@@ -31,12 +31,13 @@ TextStyle SecondaryTextHiperLinkStyle() {
       color: Color(0xFF407EC7));
 }
 
-TextStyle SecondaryTextBlackStyle({double? fontSize}) {
+TextStyle SecondaryTextBlackStyle(
+    {double? fontSize, FontWeight? myFontWeight}) {
   return TextStyle(
       color: Colors.black,
       fontFamily: 'Poppins',
       fontSize: fontSize ?? 15.0,
-      fontWeight: FontWeight.w500);
+      fontWeight: myFontWeight ?? FontWeight.w500);
 }
 
 TextStyle SecondaryTextWhiteStyle({double? fontSize}) {
@@ -47,12 +48,22 @@ TextStyle SecondaryTextWhiteStyle({double? fontSize}) {
       fontWeight: FontWeight.w500);
 }
 
-TextStyle SecondaryTextPriceStyle({double? fontSize}) {
+TextStyle SecondaryTextPriceStyle(
+    {double? fontSize, FontWeight? myFontWeight}) {
   return TextStyle(
       color: Color(0xFF54D17A),
       fontFamily: 'Poppins-bold',
       fontSize: fontSize ?? 15.0,
-      fontWeight: FontWeight.w500);
+      fontWeight: myFontWeight ?? FontWeight.w500);
+}
+
+TextStyle SecondaryTextPriceStyleNormal(
+    {double? fontSize, FontWeight? myFontWeight}) {
+  return TextStyle(
+      color: Color(0xFF54D17A),
+      fontFamily: 'Poppins-bold',
+      fontSize: fontSize ?? 15.0,
+      fontWeight: myFontWeight ?? FontWeight.w500);
 }
 
 TextStyle SecondaryTextBlackStyleHeading({double? fontSize}) {

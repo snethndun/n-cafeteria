@@ -8,6 +8,7 @@ class CustomizedBottomNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      backgroundColor: Colors.white,
       showSelectedLabels: false,
       showUnselectedLabels: false,
       // backgroundColor: Color(),

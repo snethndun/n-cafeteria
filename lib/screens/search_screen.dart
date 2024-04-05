@@ -161,28 +161,29 @@ class RecentSearchItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        // Add padding or margin as needed
-        child: Card(
-      color: Colors.white,
-      surfaceTintColor: Colors.white,
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Row(
-          children: [
-            CircleAvatar(
-              radius: 25.0,
-              backgroundImage: AssetImage('assets/images/RiceAndCurry.png'),
-            ),
-            SizedBox(
-              width: 5.0,
-            ),
-            Text(
-              dishName,
-              style: SecondaryTextBlackStyle(),
-            ),
-          ],
+      // Add padding or margin as needed
+      child: Card(
+        color: Colors.white,
+        surfaceTintColor: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Row(
+            children: [
+              CircleAvatar(
+                radius: 25.0,
+                backgroundImage: AssetImage('assets/images/RiceAndCurry.png'),
+              ),
+              SizedBox(
+                width: 5.0,
+              ),
+              Text(
+                dishName,
+                style: SecondaryTextBlackStyle(),
+              ),
+            ],
+          ),
         ),
       ),
-    ));
+    );
   }
 }

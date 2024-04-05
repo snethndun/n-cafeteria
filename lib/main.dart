@@ -3,6 +3,7 @@ import 'package:n_cafe/screens/about_me.dart';
 import 'package:n_cafe/screens/added_review.dart';
 import 'package:n_cafe/screens/cafe_page.dart';
 import 'package:n_cafe/screens/cafe_sign_in.dart';
+import 'package:n_cafe/screens/favourites_screen.dart';
 import 'package:n_cafe/screens/food_details.dart';
 
 import 'package:n_cafe/screens/login_screen.dart';
@@ -23,7 +24,7 @@ void main() {
       //   '/verify': (context) => Verify_Email(),
       // },
 
-      home: SearchScreen(),
+      home: FavouritesScreen(),
 
       theme: ThemeData(
         useMaterial3: true,

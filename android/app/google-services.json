@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999692180737",
+    "project_id": "ncafe-a826b",
+    "storage_bucket": "ncafe-a826b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999692180737:android:2f82ffdac7a10701f20f00",
+        "android_client_info": {
+          "package_name": "com.example.n_cafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNlUABqDmbbjFYvno_tOC7E2_dsUgfzRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,6 @@
+TextField(
+              decoration:
+                  InputDecoration(hintText: 'Tell us about your experience'),
+              onChanged: (text) => _setComment(text),
+              maxLines: null,
+            ),

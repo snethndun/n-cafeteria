@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 ButtonStyle PrimaryMaxButtonStyle() {
   return ButtonStyle(
     shape: MaterialStateProperty.all(
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.0))),
+      RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(6.0),
+      ),
+    ),
     minimumSize: MaterialStateProperty.all(
       Size(double.infinity, 60),
     ),
